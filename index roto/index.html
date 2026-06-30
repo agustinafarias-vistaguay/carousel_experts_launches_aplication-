@@ -1,0 +1,211 @@
+<!DOCTYPE html><html class="light" lang="es"><head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Vista Guay - Pilots Experts</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+    <script id="tailwind-config">
+            tailwind.config = {
+                darkMode: "class",
+                theme: {
+                    extend: {
+                        colors: {
+                            "primary": "#47C278",
+                            "on-primary": "#ffffff",
+                            "background": "#faf9fe",
+                            "surface": "#ffffff",
+                            "surface-variant": "#f2f2f7",
+                            "outline": "#E5E5EA",
+                            "on-surface": "#1a1b1f",
+                            "on-surface-variant": "#414755"
+                        },
+                        borderRadius: {
+                            "DEFAULT": "0.25rem",
+                            "lg": "0.5rem",
+                            "xl": "0.75rem",
+                            "xxl": "16px",
+                            "full": "9999px"
+                        },
+                        spacing: {
+                            "margin-mobile": "20px",
+                            "gap-hero": "16px",
+                        },
+                        fontFamily: {
+                            "body": ["Inter", "sans-serif"]
+                        }
+                    }
+                }
+            }
+        </script>
+    <style>
+            .glass-card {
+                background: rgba(255, 255, 255, 0.8);
+                backdrop-filter: blur(10px);
+                border: 1px solid rgba(229, 229, 234, 0.5);
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+                border-radius: 16px;
+            }
+            
+            .material-symbols-outlined {
+                font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            }
+    
+            .step-line::after {
+                content: '';
+                position: absolute;
+                left: 20px;
+                top: 40px;
+                bottom: -20px;
+                width: 2px;
+                background-color: #47C278;
+                z-index: 0;
+            }
+    
+            .step-item:last-child .step-line::after {
+                display: none;
+            }
+        </style>
+    </head>
+    <body class="bg-background text-on-surface font-body antialiased">
+    <!-- Top AppBar (from JSON) -->
+    
+    <main class="max-w-[480px] mx-auto pt-[60px] pb-32 px-margin-mobile">
+    <!-- Hero Section -->
+    <section class="mb-10">
+    <h2 class="text-[22px] font-bold uppercase leading-tight mb-4">
+                    MULTIPLICÁ TUS VUELOS.<br>ACTUALIZÁ TU FLOTA.
+                </h2>
+    <p class="text-[19px] leading-[1.2] text-on-surface-variant mb-6">
+                    Accedé a servicios nativos de aplicación con drones de última generación y maximizá tu rentabilidad operativa.
+                </p>
+    <div class="aspect-[2/1] rounded-xxl overflow-hidden shadow-lg">
+    <img class="w-full h-full object-cover" data-alt="A high-tech agricultural drone, specifically a DJI T50 model, hovering over a lush green soy field during a vibrant golden hour. The lighting is warm and cinematic, highlighting the sleek carbon fiber and green accents of the drone. The background is a vast, perfectly organized landscape, evoking a sense of modern, precision-based agriculture and professional flight expertise." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCCRR8Kn0hEBIfHlSf_7ocLRRuOhwlfmhZdJnNYv9ixkDOwo6A_4840uLjvOG7xvLK6cB3t2EHdSOS0k_Mo56n8c3m23GOlj2FK_Na9EdMwxR5IGuFsqeu4lfrESt5Ad6W4yvDQcoKtfoGMRlWDUn358D9OspGJHNzOFBrwIbyFBGDQ5yJxtMgjB2BHiTql3pcYdsEcjVJ-mRgYWH_7gqiYWjktPXlSrI1Mr6wBMH_OLN8UPDSpW-bAQiXLvbZx_C9RB2A2voHEdmE">
+    </div>
+    </section>
+    <!-- Versatility Section -->
+    <section class="mb-10">
+    <h3 class="text-[16px] font-semibold mb-6">Llegaron las solicitudes de líquidos y sólidos.</h3>
+    <div class="grid grid-cols-2 gap-4">
+    <div class="glass-card p-4 flex flex-col items-center text-center">
+    <div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-3">
+    <span class="material-symbols-outlined text-primary">water_drop</span>
+    </div>
+    <span class="text-[13px] font-semibold">Pulverizaciones</span>
+    <span class="text-[10px] text-on-surface-variant uppercase mt-1">(Líquidos)</span>
+    </div>
+    <div class="glass-card p-4 flex flex-col items-center text-center">
+    <div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-3">
+    <span class="material-symbols-outlined text-primary">potted_plant</span>
+    </div>
+    <span class="text-[13px] font-semibold">Siembra</span>
+    <span class="text-[10px] text-on-surface-variant uppercase mt-1">(Sólidos)</span>
+    </div>
+    <div class="glass-card p-4 flex flex-col items-center text-center">
+    <div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-3">
+    <span class="material-symbols-outlined text-primary">agriculture</span>
+    </div>
+    <span class="text-[13px] font-semibold">Fertilización</span>
+    <span class="text-[10px] text-on-surface-variant uppercase mt-1">(Sólidos/Líquidos)</span>
+    </div>
+    <div class="glass-card p-4 flex flex-col items-center text-center">
+    <div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-3">
+    <span class="material-symbols-outlined text-primary">grid_view</span>
+    </div>
+    <span class="text-[13px] font-semibold">Aplicación de Cebos</span>
+    <span class="text-[10px] text-on-surface-variant uppercase mt-1">(Sólidos)</span>
+    </div>
+    </div>
+    </section>
+    <!-- Workflow Section -->
+    <section class="mb-10">
+    <h3 class="text-[16px] font-semibold mb-8">Tu negocio vuela sin salir de la app.</h3>
+    <div class="space-y-12">
+    <!-- Step 1 -->
+    <div class="step-item relative flex items-start gap-6" style="opacity: 1; transform: translateY(0px); transition: 0.5s;">
+    <div class="step-line flex-shrink-0 w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center font-bold z-10">01</div>
+    <div class="pt-2">
+    <h4 class="text-[15px] font-bold">Actualizá tu perfil</h4>
+    <p class="text-[13px] text-on-surface-variant">Registrá tus drones (T50) para habilitar nuevas capacidades de carga.</p>
+    </div>
+    </div>
+    <!-- Step 2 -->
+    <div class="step-item relative flex items-start gap-6" style="opacity: 1; transform: translateY(0px); transition: 0.5s 0.2s;">
+    <div class="step-line flex-shrink-0 w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center font-bold z-10">02</div>
+    <div class="pt-2">
+    <h4 class="text-[15px] font-bold">Recibí alertas y cotizá</h4>
+    <p class="text-[13px] text-on-surface-variant">Te avisamos cuando hay demanda cerca tuyo. Enviá tu oferta al instante.</p>
+    </div>
+    </div>
+    <!-- Step 3 -->
+    <div class="step-item relative flex items-start gap-6" style="opacity: 1; transform: translateY(0px); transition: 0.5s 0.4s;">
+    <div class="step-line flex-shrink-0 w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center font-bold z-10">03</div>
+    <div class="pt-2">
+    <h4 class="text-[15px] font-bold">Ejecutá y reportá</h4>
+    <p class="text-[13px] text-on-surface-variant">Realizá la aplicación y cerrá el reporte digital directamente en la app.</p>
+    </div>
+    </div>
+    </div>
+    </section>
+    <!-- Information Block -->
+    <section class="mb-10 bg-surface-variant/50 p-5 rounded-xxl border border-outline/50">
+    <div class="flex gap-3">
+    <span class="material-symbols-outlined text-primary flex-shrink-0">info</span>
+    <div>
+    <h4 class="text-[15px] font-bold mb-2">Prioridad del Algoritmo</h4>
+    <p class="text-[13px] text-on-surface-variant leading-relaxed">
+                            Nuestro algoritmo de asignación prioriza a los pilotos con flotas actualizadas y verificadas. Mantener tu equipamiento al día te garantiza una mayor visibilidad frente a solicitudes premium de grandes productores.
+                        </p>
+    </div>
+    </div>
+    </section>
+    </main>
+    <!-- 5. CLOSING SECTION -->
+<section>
+<div class="bg-[#47C278] rounded-[24px] p-xl relative overflow-hidden text-white">
+<!-- Inner Frosted Overlay for depth -->
+<div class="absolute inset-0 bg-white/10 backdrop-blur-[4px]"></div>
+<div class="relative z-10 space-y-lg flex flex-col items-center text-center">
+<h2 class="text-headline-lg leading-tight">
+                        Todo el control de tu campo, en la palma de tu mano.
+                    </h2>
+<button onclick="handleDeepLink()" class="w-full bg-white text-on-background h-12 rounded-full text-title-md flex items-center justify-center gap-md active:scale-95 transition-transform shadow-lg">
+<span class="material-symbols-outlined">rocket_launch</span>
+                        Solicitar ahora
+                    </button>
+</div>
+</div>
+</section>
+    <script>
+            function handleDeepLink() {
+                const payload = {
+    type: 'NAVIGATE',
+    screen: 'PersonalData',
+  };
+                
+                if (window.ReactNativeWebView) {
+                    window.ReactNativeWebView.postMessage(JSON.stringify(payload));
+                } else {
+                    console.log('Deep Link Triggered:', payload);
+                    // Fallback for browser testing
+                    alert('Navegando a Registro de Drones...');
+                }
+            }
+    
+            // Optional: Smooth appearance of steps
+            document.addEventListener('DOMContentLoaded', () => {
+                const steps = document.querySelectorAll('.step-item');
+                steps.forEach((step, index) => {
+                    step.style.opacity = '0';
+                    step.style.transform = 'translateY(10px)';
+                    step.style.transition = `all 0.5s ease ${index * 0.2}s`;
+                    setTimeout(() => {
+                        step.style.opacity = '1';
+                        step.style.transform = 'translateY(0)';
+                    }, 100);
+                });
+            });
+        </script>
+    
+    
+    </body></html>
